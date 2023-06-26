@@ -1,7 +1,7 @@
-"use client"
+// "use client"
 
 // import {  useSession } from "next-auth/react";
-`import { useState, useEffect} from 'react'`
+// `import { useState, useEffect} from 'react'`
 
 // import { getDealer } from "@/utils";
 
