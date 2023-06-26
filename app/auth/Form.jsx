@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { signIn, } from "next-auth/react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { getDealer } from "@/utils";
+// import { getDealer } from "@/utils";
 
 const Form = () => {
   const router = useRouter()
