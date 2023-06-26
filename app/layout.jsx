@@ -1,5 +1,7 @@
 import './globals.css'
 
+import Provider from '../components/Provider'
+
 import { Footer, NavBar } from '@/components'
 
 export const metadata = {
@@ -7,17 +9,15 @@ export const metadata = {
   description: 'Find, sell and rent cars',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang='en'>
     <body suppressHydrationWarning={true} className='relative'>
-      <NavBar />
-      {children}
-      <Footer />
+      <Provider>
+        <NavBar />
+          {children}
+        <Footer />
+      </Provider>
     </body>
   </html>
   )

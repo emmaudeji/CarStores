@@ -72,6 +72,8 @@ body {
   @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
 }
 
+
+
 .hero__image-overlay {
   @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
@@ -231,3 +233,18 @@ body {
   @apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
+
+/* START  auth styles */
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-lg backdrop-blur p-5;
+}
+/* END auth styles */
+
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm ;
+}
+
+.outline_btn {
+  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm  flex items-center justify-center;
+}
